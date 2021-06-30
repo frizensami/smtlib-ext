@@ -5,7 +5,7 @@ This is a fork of [Stanford Open Virtual Assistant Lab's Node.js SMT-LIB 2.0 lib
 It adds new library calls to act as a utility library for [NUSMods](https://github.com/nusmodifications/nusmods), specifically a timetable optimizer.
 
 SMT-LIB 2.0 is an interoperability format to communicate with
-different SMT solvers, such as CVC4 or Z3.
+different SMT solvers, such as Z3.
 
 The syntax of SMT-LIB is similar to Lisp:
 
