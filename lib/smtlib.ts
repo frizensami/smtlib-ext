@@ -10,7 +10,7 @@ function stringEscape(str: string): string {
     //]/
 }
 
-export type SNode = SExpr | string;
+export type SNode = SExpr | string | number;
 
 class SExpr {
     private _children: SNode[];

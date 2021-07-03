@@ -13,7 +13,7 @@ export default class BaseSmtSolver {
 
     constructor(logic : string) {
         this._statements = [
-            smt.SetLogic('QF_ALL_SUPPORTED')
+            smt.SetLogic(logic)
         ];
 
         this.withAssignments = false;
@@ -33,10 +33,6 @@ export default class BaseSmtSolver {
 
     forEachStatement(callback : (cb : smt.SNode, idx : number) => void) : void {
         this._statements.forEach(callback);
-    }
-
-    async checkSat() : Promise<[boolean, Record<string,number|boolean>|undefined]> {
-        throw new Error('checkSat not implemented for this solver');
     }
 
     add(stmt : smt.SNode) : void {
